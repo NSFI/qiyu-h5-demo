@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>qiyu-H5接入demo</title>
+    </head>
+    <body>
+        <div id="j-root" class="g-bd"></div>
+        <%=htmlWebpackPlugin.files.webpackManifest%>
+        <!-- 替换为自己企业的相关信息 -->
+        <script>
+            (function (w, d, n, a, j) {
+                w[n] = w[n] || function () {
+                    (w[n].a = w[n].a || []).push(arguments);
+                };
+                j = d.createElement('script');
+                j.async = true;
+                j.src ='https://qiyukf.com/script/ba5e6e832ae0cf651df1540eaabc62eb.js?hidden=1';
+                d.body.appendChild(j);
+            })(window, document, 'ysf');
+        </script>
+    </body>
+</html>
